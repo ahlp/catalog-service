@@ -3,7 +3,7 @@
 
 
 # Descrição de serviços
-  ![Image](https://drive.google.com/file/d/1oa7XS0OmoM9-Vj2m8-NxteKOMsD-CkPQ/view?usp=sharing)
+  ![Image](https://github.com/ahlp/catalog-service/blob/master/csd-base-description.jpg)
 ## Gateway
     Terá responsabilidade de Load Balance e de router para os outros serviços. Fará validação de token.
 ## Auth
