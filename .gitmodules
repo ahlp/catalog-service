@@ -1,3 +1,15 @@
 [submodule "catalog-service-gateway"]
 	path = catalog-service-gateway
 	url = https://github.com/ahlp/catalog-service-gateway
+[submodule "catalog-service-auth"]
+	path = catalog-service-auth
+	url = https://github.com/ahlp/catalog-service-auth
+[submodule "catalog-service-search"]
+	path = catalog-service-search
+	url = https://github.com/ahlp/catalog-service-search
+[submodule "catalog-service-database"]
+	path = catalog-service-database
+	url = https://github.com/ahlp/catalog-service-database
+[submodule "catalog-service-log"]
+	path = catalog-service-log
+	url = https://github.com/ahlp/catalog-service-log
