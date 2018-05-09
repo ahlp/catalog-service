@@ -1,0 +1,3 @@
+[submodule "catalog-service-gateway"]
+	path = catalog-service-gateway
+	url = https://github.com/ahlp/catalog-service-gateway
