@@ -1,0 +1,52 @@
+{
+  "path": "/v1",
+  "paths": [
+    {
+      "path": "/dao",
+      "paths": [
+        {
+          "path": "/users|serie|comment",
+          "method": "GET"
+        },
+        {
+          "path": "/user|serie|comment/{id}",
+          "method": "GET"
+        },
+        {
+          "path": "/serie|comment",
+          "method": "POST"
+        },
+        {
+          "path": "/user|serie/{id}",
+          "method": "PUT"
+        },
+        {
+          "path": "/progress/{login}/{idSerie}",
+          "method": "POST"
+        },
+        {
+          "path": "/user",
+          "method": "POST",
+          "public": true
+        }
+      ]
+    },
+
+    {
+      "path": "/search",
+      "paths": [
+        {
+          "path": "/users|serie|comment",
+          "method": "GET",
+          "accept-type": "graphql?",
+          "public": true
+        }
+      ]
+    },
+
+    {
+      "path": "/auth",
+      "method":"POST"
+    }
+  ]
+}

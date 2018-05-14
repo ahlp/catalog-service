@@ -1,0 +1,124 @@
+// M = Mandatory, O = Opcional
+{
+  "User": {
+    "login": {
+      "type": String,
+      "post": "M"
+    },
+    "password": {
+      "type": string,
+      "post": "M",
+      "put": "O"
+    },
+    "userName": {
+      "type": string,
+      "post": "M",
+      "get": "M",
+      "put": "O"
+    },
+    "birthday": {
+      "type": string,
+      "mask": "dd/MM/yyyy",
+      "post": "M",
+      "get": "O"
+    },
+    "avatarLink": {
+      "type": string,
+      "post": "O",
+      "get": "O",
+      "put": "O"
+    },
+    "bios": {
+      "type": string,
+      "post": "O",
+      "get": "O",
+      "put": "O"
+    },
+  },
+
+  "Serie": {
+    "id":  {
+      "type": number,
+      "get": "O",
+    },
+
+    "title":  {
+      "type": string,
+      "post": "M",
+      "get": "O",
+      "put": "O"
+    },
+
+    "resume":  {
+      "type": string,
+      "post": "O",
+      "get": "O",
+      "put": "O"
+    },
+
+    "launchDate":  {
+      "type": string,
+      "post": "M",
+      "get": "O",
+      "put": "O"
+    },
+
+    "coverLink":  {
+      "type": string,
+      "post": "O",
+      "get": "O",
+      "put": "O"
+    },
+
+    "seasons":  {
+      "type": Array<{"seasonId": string, "epsCount": number}>,
+      "post": "M",
+      "get": "O",
+      "put": "O"
+    },
+
+    "commentsId": {
+      "type": Array<number>,
+      "get": "O"
+    }
+  },
+
+  "Comment": {
+    id: {
+      "type": number,
+      "get": "M"
+    }
+    userLogin: {
+      "type": string,
+      "post": "M",
+      "get": "M"
+    },
+    commentText: {
+      "type": string,
+      "post": "M",
+      "get": "M"
+    },
+    date: {
+      "type": string,
+      "get": "M"
+    },
+  }
+
+  Progress: {
+    userLogin: {
+      "type": string,
+      "post": "M",
+      "get": "M"
+    },
+    serieId: {
+      "type": number,
+      "post": "M",
+      "get": "M"
+    },
+    epsWatched: {
+      "type": Array<{"seasonId": string, "ep": number}>,
+      "get": "M",
+      "put": "O",
+    }
+  }
+}
