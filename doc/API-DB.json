@@ -10,6 +10,16 @@
       "post": "M",
       "put": "O"
     },
+    "id": {
+      "type": String,
+      "get": "M"
+    }
+  },
+  "Profile": {
+    "userId": {
+      "type": String,
+      "post": "M"
+    },
     "userName": {
       "type": string,
       "post": "M",
@@ -71,7 +81,7 @@
     },
 
     "seasons":  {
-      "type": Array<{"seasonId": string, "epsCount": number}>,
+      "type": Array<Epsode[]>,
       "post": "M",
       "get": "O",
       "put": "O"
@@ -83,16 +93,26 @@
     }
   },
 
+  "Epsode": {
+    "Title": string, 
+    "epNumber": number
+  }
+
   "Comment": {
     id: {
       "type": number,
       "get": "M"
     }
-    userLogin: {
+    userId: {
       "type": string,
       "post": "M",
       "get": "M"
     },
+    ratting: {
+      "type": number
+      "post": "O",
+      "get": "O"
+    }
     commentText: {
       "type": string,
       "post": "M",
@@ -116,7 +136,7 @@
       "get": "M"
     },
     epsWatched: {
-      "type": Array<{"seasonId": string, "ep": number}>,
+      "type": Array<Epsode>,
       "get": "M",
       "put": "O",
     }

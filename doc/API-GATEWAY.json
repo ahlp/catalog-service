@@ -23,11 +23,6 @@
         {
           "path": "/progress/{login}/{idSerie}",
           "method": "POST"
-        },
-        {
-          "path": "/user",
-          "method": "POST",
-          "public": true
         }
       ]
     },
@@ -46,7 +41,17 @@
 
     {
       "path": "/auth",
-      "method":"POST"
+      "paths": [
+        {
+          "path": "/",
+          "method": "POST"
+        },
+        {
+          "path": "/createUser",
+          "method": "POST"
+        }
+      ],
+      "public": true
     }
   ]
 }
