@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: csd-crud
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: csd-crud
+    spec:
+      containers:
+      - name: csd-crud
+        image: csd-crud:latest
+        env:
+        - name: POSTGRES_HOST
+          value: csd-crudb
+        - name: LOG_HOST
+          value: csd-log
+        ports:
+        - containerPort: 80

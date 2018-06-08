@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: csd-crudb
+  labels:
+    app: csd-crudb
+spec:
+  ports:
+  - port: 5432
+    protocol: TCP
+  selector:
+    appdb: csd-crudb

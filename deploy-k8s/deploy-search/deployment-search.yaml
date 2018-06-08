@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: csd-search
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: csd-search
+    spec:
+      containers:
+      - name: csd-search
+        image: haskell:latest
+        env:
+        - name: LOG_HOST
+          value: csd-log
+        ports:
+        - containerPort: 80

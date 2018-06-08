@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: csd-gateway
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: csd-gateway
+    spec:
+      containers:
+      - name: csd-gateway
+        image: hello:latest
+        env:
+        - name: MONGODB_HOST
+          value: csd-gateway-db
+        - name: LOG_HOST
+          value: csd-log
+        ports:
+        - containerPort: 80
