@@ -4,6 +4,9 @@ metadata:
   name: csd-gateway
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      app: csd-gateway
   template:
     metadata:
       labels:
@@ -11,7 +14,7 @@ spec:
     spec:
       containers:
       - name: csd-gateway
-        image: hello:latest
+        image: ahlp/csd-gateway:latest
         env:
         - name: MONGODB_HOST
           value: csd-gateway-db

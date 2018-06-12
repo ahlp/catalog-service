@@ -5,7 +5,7 @@ metadata:
   labels:
     app: csd-gateway-db
 spec:
-  type: ClusterPort
+  type: ClusterIP
   ports:
   - port: 27017
     protocol: TCP
