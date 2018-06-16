@@ -5,7 +5,6 @@ metadata:
   labels:
     app: csd-crud
 spec:
-  type: NodePort
   ports:
   - protocol: TCP
     port: 80
