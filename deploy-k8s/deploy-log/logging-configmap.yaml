@@ -1,0 +1,26 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: logging-configmap
+data:
+  logstash.yml: |
+    http.host: "0.0.0.0"
+    path.config: /usr/share/logstash/pipeline
+
+  logstash.conf: |
+    input {
+      udp {
+        port => 5000
+        codec => 'json'
+      }
+      tcp {
+        port => 5000
+        codec => 'json'
+      }
+    }
+
+    output {
+      elasticsearch {
+        hosts => "elasticsearch:9200"
+      }
+    }
