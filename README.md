@@ -10,7 +10,6 @@
     Geração de token e regitro, único serviço acessivel sem token.
 ## DB
     Responsável pelo armazenamento do CRUD dos dados de Users, Series e Progress. Não sendo necessário estarem todos no mesmo DB.
-    TODO: Avaliar se é necessário um serviço para o CRUD outro só para o DB.
 ## Search
     Cache do dados para consultas.
 ## Log
