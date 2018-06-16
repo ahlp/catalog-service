@@ -4,6 +4,9 @@ metadata:
   name: csd-crud
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      app: csd-crud
   template:
     metadata:
       labels:
@@ -11,11 +14,12 @@ spec:
     spec:
       containers:
       - name: csd-crud
-        image: csd-crud:latest
+        image: ahlp/csd-crud:latest
         env:
-        - name: POSTGRES_HOST
-          value: csd-crudb
-        - name: LOG_HOST
-          value: csd-log
+        # - name: POSTGRES_HOST
+        #   value: csd-crudb
+        # - name: LOG_HOST
+        #   value: csd-log
         ports:
-        - containerPort: 80
+        - containerPort: 3000
+    
