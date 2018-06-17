@@ -37,7 +37,9 @@ spec:
         ports:
         - containerPort: 9200
         - containerPort: 9300
-        resources: {}
+        resources:
+          requests:
+            memory: "600Mi"
         volumeMounts:
         - mountPath: /usr/share/elasticsearch/data
           name: elasticsearch-claim0
