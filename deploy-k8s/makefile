@@ -15,8 +15,6 @@ deploySearch:
 deleteSearch:
 	@cd deploy-search/; make delete
 deploy:
-	@kubectl create -f volume-db.yaml
-	@kubectl create -f volume-rwo.yaml
 	@make deployLog
 	@make deployCrud
 	@make deployGateway
@@ -24,5 +22,3 @@ deleteDeploy:
 	@make deleteCrud
 	@make deleteGateway
 	@make deleteLog
-	@kubectl delete -f volume-db.yaml
-	@kubectl delete -f volume-rwo.yaml
