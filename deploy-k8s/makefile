@@ -24,3 +24,5 @@ deleteDeploy:
 	@make deleteCrud
 	@make deleteGateway
 	@make deleteLog
+	@kubectl delete -f volume-db.yaml
+	@kubectl delete -f volume-rwo.yaml
