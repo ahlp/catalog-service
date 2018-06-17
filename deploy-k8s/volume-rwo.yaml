@@ -8,6 +8,4 @@ spec:
   accessModes:
     - ReadWriteOnce
   persistentVolumeReclaimPolicy: Retain
-  vsphereVolume:
-    volumePath: "RWO"
 

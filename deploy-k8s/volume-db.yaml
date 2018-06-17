@@ -8,6 +8,4 @@ spec:
   accessModes:
     - ReadWriteMany
   persistentVolumeReclaimPolicy: Retain
-  vsphereVolume:
-    volumePath: "DB"
 
