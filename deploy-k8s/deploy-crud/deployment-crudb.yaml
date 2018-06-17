@@ -22,3 +22,7 @@ spec:
         #   value: postgres
         ports:
         - containerPort: 5432
+      volumes:
+      - name: csd-crudb-volume
+        persistentVolumeClaim:
+          claimName: csd-crudb-volume
