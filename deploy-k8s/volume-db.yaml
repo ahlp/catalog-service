@@ -9,5 +9,5 @@ spec:
     - ReadWriteMany
   persistentVolumeReclaimPolicy: Retain
   vsphereVolume:
-    volumePath: "~/DB"
+    volumePath: "DB"
 

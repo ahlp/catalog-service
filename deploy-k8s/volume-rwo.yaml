@@ -9,5 +9,5 @@ spec:
     - ReadWriteOnce
   persistentVolumeReclaimPolicy: Retain
   vsphereVolume:
-    volumePath: "/~/RWO"
+    volumePath: "RWO"
 
