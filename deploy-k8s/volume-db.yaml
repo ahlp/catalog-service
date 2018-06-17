@@ -6,8 +6,8 @@ spec:
   capacity:
     storage: 2Gi
   accessModes:
-    - ReadWriteOnce
+    - ReadWriteMany
   persistentVolumeReclaimPolicy: Retain
   vsphereVolume:
-    volumePath: "/dev/xvda1/myDisk"
+    volumePath: "~/DB"
 
