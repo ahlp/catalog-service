@@ -41,7 +41,7 @@ spec:
           requests:
             memory: "600Mi"
         volumeMounts:
-        - mountPath: /usr/share/elasticsearch/data
+        - mountPath: /data
           name: elasticsearch-claim0
       restartPolicy: Always
       volumes:
