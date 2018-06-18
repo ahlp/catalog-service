@@ -1,16 +1,28 @@
 # catalog-service
   CSD (Catalog Series and Drama) Service
 
+# Mainteners
+[Arthur](https://github.com/ahlp)
+[Cecilia](https://github.com/hnka)
+[Giovanni](https://github.com/gaabs)
+[Renato](https://github.com/renatodms)
 
-# Descrição de serviços
+# Description
   ![Image](https://github.com/ahlp/catalog-service/blob/master/csd-base-description.jpg)
 ## Gateway
-    Terá responsabilidade de Load Balance e de router para os outros serviços. Fará validação de token.
-## Auth
-    Geração de token e regitro, único serviço acessivel sem token.
+    Authentication, Token generation and validation, Entrypoint, Redirect for other services
 ## DB
-    Responsável pelo armazenamento do CRUD dos dados de Users, Series e Progress. Não sendo necessário estarem todos no mesmo DB.
+    Series, Profiles, Eps CRUD.
 ## Search
-    Cache do dados para consultas.
+    Cache data.
 ## Log
-    Serviço para centralização dos Logs dos microservices.
+    Log Service for the app.
+
+# Deploy
+
+## How To
+    cd deploy-k8s/
+    make deploy
+
+## PS
+    All yaml files are using images from my dockerhub [ahlp](https://hub.docker.com/u/ahlp/), if you wanna build your own the repositories have all dockerfiles.
