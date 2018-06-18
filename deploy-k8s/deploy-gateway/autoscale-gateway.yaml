@@ -10,12 +10,4 @@ spec:
     name: csd-gateway
   minReplicas: 1
   maxReplicas: 10
-  metrics:
-  - type: Resource
-    resource:
-      name: cpu
-      targetAverageUtilization: 50
-  - type: Pods
-    pods:
-      metricName: packets-per-second
-      targetAverageValue: 1k
+  targetCPUUtilizationPercentage: 50
