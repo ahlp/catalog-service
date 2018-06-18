@@ -2,10 +2,10 @@
   CSD (Catalog Series and Drama) Service
 
 # Mainteners
-[Arthur](https://github.com/ahlp)
-[Cecilia](https://github.com/hnka)
-[Giovanni](https://github.com/gaabs)
-[Renato](https://github.com/renatodms)
+ - [Arthur](https://github.com/ahlp)
+ - [Cecilia](https://github.com/hnka)
+ - [Giovanni](https://github.com/gaabs)
+ - [Renato](https://github.com/renatodms)
 
 # Description
   ![Image](https://github.com/ahlp/catalog-service/blob/master/csd-base-description.jpg)
@@ -25,4 +25,5 @@
     make deploy
 
 ## PS
-    All yaml files are using images from my dockerhub [ahlp](https://hub.docker.com/u/ahlp/), if you wanna build your own the repositories have all dockerfiles.
+ - [ahlp](https://hub.docker.com/u/ahlp/) <- all the images
+ - If you wanna build your own the repositories have all dockerfiles.
