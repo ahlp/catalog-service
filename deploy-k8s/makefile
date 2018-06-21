@@ -17,8 +17,10 @@ deleteSearch:
 deploy:
 	@make deployLog
 	@make deployCrud
+	@make deploySearch
 	@make deployGateway
 deleteDeploy:
 	@make deleteCrud
+	@make deleteSearch
 	@make deleteGateway
 	@make deleteLog

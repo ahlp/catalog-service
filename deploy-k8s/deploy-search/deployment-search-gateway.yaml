@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: csd-search
+  name: csd-search-gateway
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: csd-search
+      app: csd-search-gateway
   template:
     metadata:
       labels:
-        app: csd-search
+        app: csd-search-gateway
     spec:
       containers:
       - name: csd-search
-        image: ahlp/csd-search:latest
+        image: ahlp/csd-search-gateway:latest
         ports:
         - containerPort: 80
