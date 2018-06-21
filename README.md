@@ -9,14 +9,14 @@
 
 # Description
   ![Image](https://github.com/ahlp/catalog-service/blob/master/csd-base-description.jpg)
-## Gateway
-    Authentication, Token generation and validation, Entrypoint, Redirect for other services
+## Gateway / Auth
+    The [Gateway](https://github.com/ahlp/catalog-service-gateway) has function of Token generation and validation, Entrypoint, Redirect for other services
 ## DB
-    Series, Profiles, Eps CRUD.
+    The [Database](https://github.com/ahlp/catalog-service-database) has function of store Series, Profiles, Eps CRUD.
 ## Search
-    Cache data.
+    The [Search](https://github.com/ahlp/catalog-service-search) has function of Cache the data from DB.
 ## Log
-    Log Service for the app.
+    The Log Service has function of storage and analyse the logs from the app.
 
 # Deploy
 
@@ -26,4 +26,8 @@
 
 ## PS
  - [ahlp](https://hub.docker.com/u/ahlp/) <- all the images
- - If you wanna build your own the repositories have all dockerfiles.
+ - If you wanna build your own, the repositories have all dockerfiles.
+
+# Dependencies
+ - https://www.docker.com/
+ - https://kubernetes.io/
