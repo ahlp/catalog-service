@@ -25,7 +25,7 @@
     make deploy
 
 ## PS
- - [ahlp](https://hub.docker.com/u/ahlp/) <- all the images
+ - [Docker Hub](https://hub.docker.com/u/ahlp/) <- all the images
  - If you wanna build your own, the repositories have all dockerfiles.
 
 # Dependencies
