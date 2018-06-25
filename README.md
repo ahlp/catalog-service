@@ -10,13 +10,13 @@
 # Description
   ![Image](https://github.com/ahlp/catalog-service/blob/master/csd-base-description.jpg)
 ## Gateway / Auth
-    The [Gateway](https://github.com/ahlp/catalog-service-gateway) has function of Token generation and validation, Entrypoint, Redirect for other services
+ - The [Gateway](https://github.com/ahlp/catalog-service-gateway/) has function of Token generation and validation, Entrypoint, Redirect for other services
 ## DB
-    The [Database](https://github.com/ahlp/catalog-service-database) has function of store Series, Profiles, Eps CRUD.
+ - The [Database](https://github.com/ahlp/catalog-service-database/) has function of store Series, Profiles, Eps CRUD.
 ## Search
-    The [Search](https://github.com/ahlp/catalog-service-search) has function of Cache the data from DB.
+ - The [Search](https://github.com/ahlp/catalog-service-search/) has function of Cache the data from DB.
 ## Log
-    The Log Service has function of storage and analyse the logs from the app.
+ - The Log Service has function of storage and analyse the logs from the app.
 
 # Deploy
 
