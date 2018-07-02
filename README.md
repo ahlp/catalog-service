@@ -9,6 +9,7 @@
 
 # Description
   ![Image](https://github.com/ahlp/catalog-service/blob/master/csd-base-description.jpg)
+  [Tech Report](https://github.com/ahlp/catalog-service/blob/master/doc/Tech_Report.pdf)
 ## Gateway / Auth
  - The [Gateway](https://github.com/ahlp/catalog-service-gateway/) has function of Token generation and validation, Entrypoint, Redirect for other services
 ## DB
